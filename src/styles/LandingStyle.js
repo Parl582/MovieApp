@@ -101,17 +101,8 @@ export const HeaderContainer = styled.div`
   top: 0;
   z-index: 111;
   flex-wrap: wrap;
-
-  li {
-    cursor: pointer;
-    color: #fff;
-    list-style: none;
-    font-size: 1.34rem;
-    font-weight: 700;
-    :hover {
-      color: red;
-    }
-  }
+  justify-content: flex-end;
+  padding: 0 20px;
 `;
 
 export const SelectLanguage = styled.div`
