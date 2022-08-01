@@ -3,18 +3,21 @@
     "id": 1,
     "name": "John",
     "age": 30,
-    "city": "New York"
+    "city": "New York",
+    "language": "English"
   },
   {
     "id": 2,
     "name": "Peter",
     "age": 25,
-    "city": "London"
+    "city": "London",
+    "language": "Hindi"
   },
   {
     "id": 3,
     "name": "James",
     "age": 27,
-    "city": "Paris"
+    "city": "Paris",
+    "language": "English"
   }
 ]

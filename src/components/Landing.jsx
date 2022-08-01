@@ -54,12 +54,13 @@ const Landing = ({ search }) => {
     setMovies(getFav);
     console.log(getFav);
   };
-  // search by language
 
-  console.log(language);
+
+  // search by language
   const handleLanguage = (e) => {
+    let NEd = JSON.parse(localStorage.getItem("Movies"));
     setLanguage(e.target.value);
-    const newData = movies.filter((item) => {
+    const newData = NEd.filter((item) => {
       return item.language === e.target.value;
     });
     setMovies(newData);
