@@ -55,13 +55,17 @@ const Landing = ({ search }) => {
     console.log(getFav);
   };
 
-
   // search by language
+
   const handleLanguage = (e) => {
     let NEd = JSON.parse(localStorage.getItem("Movies"));
     setLanguage(e.target.value);
+
     const newData = NEd.filter((item) => {
-      return item.language === e.target.value;
+      if (e.target.value !== "all") {
+        return item.language === e.target.value;
+      }
+      setDatas(NEd);
     });
     setMovies(newData);
   };
@@ -78,6 +82,7 @@ const Landing = ({ search }) => {
           <SelectLanguage>
             <select onChange={handleLanguage}>
               <option value="">Select Language</option>
+              <option value="all">All</option>
               <option value="English">English</option>
               <option value="Hindi">Hindi</option>
             </select>
