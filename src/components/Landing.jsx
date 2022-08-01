@@ -54,16 +54,6 @@ const Landing = ({ search }) => {
     setMovies(getFav);
     console.log(getFav);
   };
-
-  // search by gener
-
-  // const handleSearch = (filter) => {
-  //   const newData = movies.filter((item) => {
-  //     return item.gener === filter;
-  //   });
-  //   setMovies(newData);
-  // };
-
   // search by language
 
   console.log(language);
@@ -73,7 +63,6 @@ const Landing = ({ search }) => {
       return item.language === e.target.value;
     });
     setMovies(newData);
-    // console.log(newData);
   };
 
   useEffect(() => {
@@ -85,13 +74,6 @@ const Landing = ({ search }) => {
     <>
       <Container>
         <HeaderContainer>
-          {/* <li onClick={() => getMovies()}> All </li>
-          <li onClick={() => handleSearch("comedy")}> Comady </li>
-          <li onClick={() => handleSearch("action")}> Action </li>
-          <li onClick={() => handleSearch("horror")}> Horror </li>
-          <li onClick={() => handleSearch("si-fi")}> Sci-Fi </li>
-          <li onClick={() => handleSearch("drama")}> Drama </li> */}
-
           <SelectLanguage>
             <select onChange={handleLanguage}>
               <option value="">Select Language</option>
